@@ -64,6 +64,7 @@ scipy==1.6.2
 smart-open==5.1.0
 smmap==4.0.0
 soupsieve==2.2.1
+spacy==2.3.5
 starlette==0.14.2
 streamlit==0.84.0
 sumy==0.8.1
