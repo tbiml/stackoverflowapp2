@@ -89,3 +89,6 @@ class Autotag(Resource):
 
 
 api.add_resource(Autotag, '/autotag/<question>')
+
+if __name__ == "__main__":
+	app.run()
