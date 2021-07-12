@@ -89,5 +89,3 @@ class Autotag(Resource):
 
 
 api.add_resource(Autotag, '/autotag/<question>')
-
-app.run(debug=True)
