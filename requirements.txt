@@ -1,0 +1,13 @@
+scikit-learn==0.24.1
+pandas==1.2.3
+numpy==1.20.2
+joblib==1.0.1
+spacy==2.3.5
+nltk==3.2.4
+langdetect==1.0.9
+deep_translator==1.4.4
+bs4==0.0.1
+flasgger==0.9.5
+Flask==2.0.1
+Flask-RESTful==0.3.9
+flask-restplus==0.13.0
