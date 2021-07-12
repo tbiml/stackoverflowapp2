@@ -4,7 +4,6 @@ from flask_restful import Api, Resource
 import pandas as pd
 import joblib
 import spacy
-import en_core_web_md
 import preprocessing as ppc
 
 
@@ -59,7 +58,7 @@ class Autotag(Resource):
         """
         # Clean the question sent
         #nlp = spacy.load('en', exclude=['tok2vec', 'ner', 'parser', 'attribute_ruler', 'lemmatizer'])
-        nlp = en_core_web_md.load(exclude=['tok2vec', 'ner', 'parser', 'attribute_ruler', 'lemmatizer'])
+        nlp = spacy.load('en_core_web_md', exclude=['tok2vec', 'ner', 'parser', 'attribute_ruler', 'lemmatizer'])
         pos_list = ["NOUN","PROPN"]
         rawtext = question
         cleaned_question = ppc.text_cleaner(rawtext, nlp, pos_list, "english")
