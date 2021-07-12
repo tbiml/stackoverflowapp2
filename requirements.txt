@@ -37,6 +37,7 @@ gunicorn==20.1.0
 h11==0.12.0
 ipywidgets==7.6.3
 itsdangerous==2.0.1
+joblib==1.0.1
 jsonschema==3.0.2
 langdetect==1.0.9
 lxml==4.6.3
