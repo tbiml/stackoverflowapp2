@@ -21,7 +21,6 @@ click==7.1.2
 Cython==0.29.21
 deep-translator==1.4.4
 docopt==0.6.2
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
 entrypoints==0.3
 fastapi==0.65.2
 flasgger==0.9.5
@@ -64,7 +63,6 @@ scipy==1.6.2
 smart-open==5.1.0
 smmap==4.0.0
 soupsieve==2.2.1
-spacy==2.3.5
 starlette==0.14.2
 streamlit==0.84.0
 sumy==0.8.1
