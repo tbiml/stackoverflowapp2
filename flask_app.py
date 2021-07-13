@@ -4,7 +4,7 @@ from flask_restful import Api, Resource
 import pandas as pd
 import joblib
 import spacy
-import en-core-web-sm
+import en_core_web_sm
 import preprocessing as ppc
 
 
@@ -58,7 +58,7 @@ class Autotag(Resource):
                                description: List of tags with over 30% of probabilities
         """
         # Clean the question sent
-        nlp = en-core-web-sm.load(exclude=['tok2vec', 'ner', 'parser', 'attribute_ruler', 'lemmatizer'])
+        nlp = en_core_web_sm.load(exclude=['tok2vec', 'ner', 'parser', 'attribute_ruler', 'lemmatizer'])
         #nlp = spacy.load('en_core_web_md', exclude=['tok2vec', 'ner', 'parser', 'attribute_ruler', 'lemmatizer'])
         pos_list = ["NOUN","PROPN"]
         rawtext = question
