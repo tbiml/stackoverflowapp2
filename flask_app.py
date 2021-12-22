@@ -12,16 +12,6 @@ app = Flask(__name__)
 api = Api(app)
 
 template = {
-  "swagger": "2.0",
-  "info": {
-    "title": "Stackoverflow tags predictor for question",
-    "description": "API to predict tags of a stackoverflow non-cleaned question. NLP preprocessing and LogisticRegression multi-labels predictions.",
-    "contact": {
-      "email": "michael@mf-data-science.fr",
-      "url": "http://www.mf-data-science.fr",
-    },
-    "version": "0.0.1"
-  }
 }
 
 swagger = Swagger(app, template=template)
